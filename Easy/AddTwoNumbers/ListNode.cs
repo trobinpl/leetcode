@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace AddTwoNumbers
 {
-    class Program
+    public class ListNode
     {
-        static void Main(string[] args)
-        {
-        }
+        public int val;
+        public ListNode next;
+        public ListNode(int x) { val = x; }
     }
 }
