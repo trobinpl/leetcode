@@ -24,6 +24,7 @@ namespace RomanToInteger
             //Console.WriteLine(RomanToInt("I"));
             //Console.WriteLine(RomanToInt("II"));
             Console.WriteLine(RomanToInt("III"));
+            Console.WriteLine(RomanToInt("DCXXI"));
             //Console.WriteLine(RomanToInt("IV"));
             //Console.WriteLine(RomanToInt("V"));
             //Console.WriteLine(RomanToInt("VI"));
@@ -61,9 +62,9 @@ namespace RomanToInteger
 
             // result = RomanToInt(s[0].ToString()) +/- RomanToInt(s.Substring(1));
             int current = RomanToInt(s[0].ToString());
-            int next = RomanToInt(s.Substring(1, 1));
+            int next = RomanToInt(s.Substring(1));
 
-            if (current >= next)
+            if (current >= next || next < 5)
             {
                 return current + next;
             }
