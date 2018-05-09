@@ -21,25 +21,56 @@ namespace RomanToInteger
          */
         static void Main(string[] args)
         {
-            RomanToInt("I");
+            //Console.WriteLine(RomanToInt("I"));
+            //Console.WriteLine(RomanToInt("II"));
+            Console.WriteLine(RomanToInt("III"));
+            //Console.WriteLine(RomanToInt("IV"));
+            //Console.WriteLine(RomanToInt("V"));
+            //Console.WriteLine(RomanToInt("VI"));
+            //Console.WriteLine(RomanToInt("VII"));
+            //Console.WriteLine(RomanToInt("VIII"));
+            //Console.WriteLine(RomanToInt("IX"));
+            //Console.WriteLine(RomanToInt("IX"));
+            //Console.WriteLine(RomanToInt("X"));
+            //Console.WriteLine(RomanToInt("IX"));
+            //Console.WriteLine(RomanToInt("CD"));
+            //Console.WriteLine(RomanToInt("CM"));
+
+            Console.ReadKey();
         }
 
         static int RomanToInt(string s)
         {
-            int result = 0;
-            int decoded = 0;
-            if(s == "I")
+            switch (s)
             {
-                decoded = 1;
-            }
-            if(s == "V")
-            {
-                decoded = 5;
+                case "I":
+                    return 1;
+                case "V":
+                    return 5;
+                case "X":
+                    return 10;
+                case "L":
+                    return 50;
+                case "C":
+                    return 100;
+                case "D":
+                    return 500;
+                case "M":
+                    return 1000;
             }
 
-            result += ;
+            // result = RomanToInt(s[0].ToString()) +/- RomanToInt(s.Substring(1));
+            int current = RomanToInt(s[0].ToString());
+            int next = RomanToInt(s.Substring(1, 1));
 
-            return result;
+            if (current >= next)
+            {
+                return current + next;
+            }
+            else
+            {
+                return next - current;
+            }
         }
     }
 }
