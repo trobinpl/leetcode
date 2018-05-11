@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestCommonPrefix", "Easy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeTwoSortedLists", "Easy\MergeTwoSortedLists\MergeTwoSortedLists\MergeTwoSortedLists.csproj", "{447B653A-C126-4B65-8560-36A8A376A9C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicatesFromSortedArray", "Easy\RemoveDuplicatesFromSortedArray\RemoveDuplicatesFromSortedArray.csproj", "{C35F34CA-C28A-4CF1-8CA0-65281D3EB6D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "Easy\ConsoleApp1\ConsoleApp1.csproj", "{D2BA5199-C45A-46E2-A3F5-6C0122D3264D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +63,14 @@ Global
 		{447B653A-C126-4B65-8560-36A8A376A9C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{447B653A-C126-4B65-8560-36A8A376A9C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{447B653A-C126-4B65-8560-36A8A376A9C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C35F34CA-C28A-4CF1-8CA0-65281D3EB6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C35F34CA-C28A-4CF1-8CA0-65281D3EB6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C35F34CA-C28A-4CF1-8CA0-65281D3EB6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C35F34CA-C28A-4CF1-8CA0-65281D3EB6D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2BA5199-C45A-46E2-A3F5-6C0122D3264D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2BA5199-C45A-46E2-A3F5-6C0122D3264D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2BA5199-C45A-46E2-A3F5-6C0122D3264D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2BA5199-C45A-46E2-A3F5-6C0122D3264D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +84,8 @@ Global
 		{4C0DE97D-BED8-4137-9681-C9ADDD6614A7} = {93818555-5534-4822-8DA5-99350D561D11}
 		{1B92E077-B795-4BBB-B403-30443E60ACAD} = {93818555-5534-4822-8DA5-99350D561D11}
 		{447B653A-C126-4B65-8560-36A8A376A9C0} = {93818555-5534-4822-8DA5-99350D561D11}
+		{C35F34CA-C28A-4CF1-8CA0-65281D3EB6D5} = {93818555-5534-4822-8DA5-99350D561D11}
+		{D2BA5199-C45A-46E2-A3F5-6C0122D3264D} = {93818555-5534-4822-8DA5-99350D561D11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AFBD862-35E5-4C8E-AD66-EF2326406803}
