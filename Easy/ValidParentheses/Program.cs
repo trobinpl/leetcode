@@ -25,11 +25,12 @@ namespace ValidParentheses
          */
         static void Main(string[] args)
         {
-            bool test1 = ValidParentheses("()");
-            bool test2 = ValidParentheses("([{}])");
-            bool test3 = ValidParentheses("()[]{()}");
-            bool test4 = ValidParentheses("({[}])");
-            bool test5 = ValidParentheses("(([]){})");
+            //bool test1 = ValidParentheses("()");
+            //bool test2 = ValidParentheses("([{}])");
+            //bool test3 = ValidParentheses("()[]{()}");
+            //bool test4 = ValidParentheses("({[}])");
+            //bool test5 = ValidParentheses("(([]){})");
+            bool test6 = ValidParentheses("){");
         }
 
         static bool ValidParentheses(string s)
@@ -39,25 +40,26 @@ namespace ValidParentheses
                 return false;
             }
 
-            if(s.Length == 0)
+            Stack<char> stack = new Stack<char>();
+
+            for(int i = 0; i<=s.Length - 1; i++)
+            {
+                if(OpenBracket(s[i]))
+                {
+                    stack.Push(Complementary(s[i]));
+                }
+                else if (stack.Count > 0 && stack.Peek() == s[i])
+                {
+                    stack.Pop();
+                }
+            }
+
+            if (stack.Count == 0)
             {
                 return true;
             }
 
-            char open = s[0];
-            int complementaryIndex = FindFarestComplementary(open, s);
-            if (complementaryIndex != -1 && complementaryIndex % 2 != 0)
-            {
-                s = string.Concat(s.Substring(1, complementaryIndex - 1), s.Substring(complementaryIndex + 1));
-
-                return true && ValidParentheses(s);
-            }
-
             return false;
-
-            /* if(complementary not found)
-             * we should have empty string
-             */
         }
 
         static char Complementary(char c)
@@ -75,16 +77,9 @@ namespace ValidParentheses
             }
         }
 
-        static int FindFarestComplementary(char open, string s)
+        static bool OpenBracket(char c)
         {
-            for(int i = s.Length - 1; i > 0; i--)
-            {
-                if(s[i] == Complementary(open))
-                {
-                    return i;
-                }
-            }
-            return -1;
+            return c == '(' || c == '{' || c == '[';
         }
     }
 }
