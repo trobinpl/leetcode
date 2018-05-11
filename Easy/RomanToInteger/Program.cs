@@ -23,54 +23,81 @@ namespace RomanToInteger
         {
             //Console.WriteLine(RomanToInt("I"));
             //Console.WriteLine(RomanToInt("II"));
-            Console.WriteLine(RomanToInt("III"));
-            Console.WriteLine(RomanToInt("DCXXI"));
+            //Console.WriteLine(RomanToInt("III"));
             //Console.WriteLine(RomanToInt("IV"));
             //Console.WriteLine(RomanToInt("V"));
             //Console.WriteLine(RomanToInt("VI"));
             //Console.WriteLine(RomanToInt("VII"));
             //Console.WriteLine(RomanToInt("VIII"));
             //Console.WriteLine(RomanToInt("IX"));
-            //Console.WriteLine(RomanToInt("IX"));
             //Console.WriteLine(RomanToInt("X"));
-            //Console.WriteLine(RomanToInt("IX"));
             //Console.WriteLine(RomanToInt("CD"));
             //Console.WriteLine(RomanToInt("CM"));
+            //Console.WriteLine(RomanToInt("DCXXI"));
+            //Console.WriteLine(RomanToInt("MCMIV"));
+            Console.WriteLine(RomanToInt("MCMXCIV"));
+            //Console.WriteLine(RomanToInt("MMMMCMXCIX"));
 
             Console.ReadKey();
         }
 
         static int RomanToInt(string s)
         {
-            switch (s)
+            int result = 0;
+            for(int i=0; i<s.Length; i++)
             {
-                case "I":
+                char currentChar = s[i];
+                char nextChar = ' ';
+
+                if(i+1 < s.Length)
+                {
+                    nextChar = s[i + 1];
+                }
+
+                if(nextChar == ' ')
+                {
+                    result += ConvertSingleNumber(currentChar);
+                }
+                else
+                {
+                    int current = ConvertSingleNumber(currentChar);
+                    int next = ConvertSingleNumber(nextChar);
+
+                    if (current >= next)
+                    {
+                        result += current;
+                    }
+                    else
+                    {
+                        result += next - current;
+                        i++;
+                    }
+                }
+            }
+
+            return result;
+        }
+
+        static int ConvertSingleNumber(char c)
+        {
+            switch (c)
+            {
+                case 'I':
                     return 1;
-                case "V":
+                case 'V':
                     return 5;
-                case "X":
+                case 'X':
                     return 10;
-                case "L":
+                case 'L':
                     return 50;
-                case "C":
+                case 'C':
                     return 100;
-                case "D":
+                case 'D':
                     return 500;
-                case "M":
+                case 'M':
                     return 1000;
-            }
-
-            // result = RomanToInt(s[0].ToString()) +/- RomanToInt(s.Substring(1));
-            int current = RomanToInt(s[0].ToString());
-            int next = RomanToInt(s.Substring(1));
-
-            if (current >= next || next < 5)
-            {
-                return current + next;
-            }
-            else
-            {
-                return next - current;
+                default:
+                    return 0;
             }
         }
     }
