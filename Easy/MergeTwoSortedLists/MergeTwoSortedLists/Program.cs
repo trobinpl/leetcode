@@ -8,6 +8,10 @@ namespace MergeTwoSortedLists
 {
     class Program
     {
+        /*
+         * Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
+         * 1->2->4, 1->3->4; result: 1->1->2->3->4->4
+         */
         static void Main(string[] args)
         {
             ListNode l11 = new ListNode(1);
