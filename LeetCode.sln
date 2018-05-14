@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchInsertPosition", "Eas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidParentheses", "Easy\ValidParentheses\ValidParentheses.csproj", "{4C0DE97D-BED8-4137-9681-C9ADDD6614A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumSubarray", "Easy\MaximumSubarray\MaximumSubarray.csproj", "{0D3A5165-9A8C-4F4A-B1AA-6A86DF05A07A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestTimeToBuyAndSellStock", "Easy\BestTimeToBuyAndSellStock\BestTimeToBuyAndSellStock.csproj", "{66587378-80EF-40F6-81B0-6E9D5965FDDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +87,14 @@ Global
 		{4C0DE97D-BED8-4137-9681-C9ADDD6614A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C0DE97D-BED8-4137-9681-C9ADDD6614A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C0DE97D-BED8-4137-9681-C9ADDD6614A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D3A5165-9A8C-4F4A-B1AA-6A86DF05A07A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D3A5165-9A8C-4F4A-B1AA-6A86DF05A07A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D3A5165-9A8C-4F4A-B1AA-6A86DF05A07A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D3A5165-9A8C-4F4A-B1AA-6A86DF05A07A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66587378-80EF-40F6-81B0-6E9D5965FDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66587378-80EF-40F6-81B0-6E9D5965FDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66587378-80EF-40F6-81B0-6E9D5965FDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66587378-80EF-40F6-81B0-6E9D5965FDDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +112,8 @@ Global
 		{1B92E077-B795-4BBB-B403-30443E60ACAD} = {93818555-5534-4822-8DA5-99350D561D11}
 		{22AA25A8-9903-4434-85AB-B2DA2F270813} = {93818555-5534-4822-8DA5-99350D561D11}
 		{4C0DE97D-BED8-4137-9681-C9ADDD6614A7} = {93818555-5534-4822-8DA5-99350D561D11}
+		{0D3A5165-9A8C-4F4A-B1AA-6A86DF05A07A} = {93818555-5534-4822-8DA5-99350D561D11}
+		{66587378-80EF-40F6-81B0-6E9D5965FDDE} = {93818555-5534-4822-8DA5-99350D561D11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AFBD862-35E5-4C8E-AD66-EF2326406803}
