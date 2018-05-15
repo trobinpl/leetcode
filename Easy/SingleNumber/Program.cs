@@ -13,10 +13,19 @@ namespace SingleNumber
          */
         static void Main(string[] args)
         {
-            int r = SingleNumber(new int[] { 4, 1, 2, 1, 2 });
-            int r2 = SingleNumber(new int[] { 2, 2, 1 });
-            int r3 = SingleNumber(new int[] { 1, 1 });
-            int r4 = SingleNumber(new int[] { 1 });
+            int r = SingleNumberMath(new int[] { 4, 1, 2, 1, 2 });
+            int r2 = SingleNumberMath(new int[] { 2, 2, 1 });
+            int r3 = SingleNumberMath(new int[] { 1, 1 });
+            int r4 = SingleNumberMath(new int[] { 1 });
+        }
+
+        /* 2*a + 2*b + 2*c (sum of distinct values of nums times 2) - 2*a+2*b+c (every but one value twice) = c */
+        static int SingleNumberMath(int[] nums)
+        {
+            int distinctSum = 2 * nums.Distinct().Sum();
+            int sum = nums.Sum();
+
+            return distinctSum - sum;
         }
 
         static int SingleNumber(int[] nums)
