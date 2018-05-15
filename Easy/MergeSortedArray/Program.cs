@@ -16,72 +16,50 @@ namespace MergeSortedArray
          */
         static void Main(string[] args)
         {
-            Merge(new int[] { 1, 2, 3, 0, 0, 0 }, 3, new int[] { 2, 5, 6 }, 3);
+            int[] a = new int[] { 1, 0, 0, 0, 0, 0 };
+            int[] b = new int[] { 2, 3, 4, 5, 6 };
+            Merge(a, 1, b, 5);
         }
 
         static void Merge(int[] nums1, int m, int[] nums2, int n)
         {
-            int[] a = Merge(nums1, nums2);
-            nums1 = CombineArrays(nums1, nums2, m);
-        }
+            int[] tempA = new int[m];
 
-        //static int[] Sort(int[] array, int start, int end)
-        //{
-        //    if(array.Length == 1)
-        //    {
-        //        return array;
-        //    }
+            for(int k=0; k < m; k++)
+            {
+                tempA[k] = nums1[k];
+            }
 
-        //    int mid = (start + end) / 2;
-        //    int[] left = Sort(array, start, mid);
-        //    int[] right = Sort(array, mid + 1, end);
-        //}
-
-        static int[] Merge(int[] a, int[] b)
-        {
             int index = 0;
-            int[] result = new int[a.Length + b.Length];
             int i = 0;
             int j = 0;
-            while(i < a.Length && j < b.Length)
+            while (i < m && j < n)
             {
-                if(a[i] < b[j])
+                if (tempA[i] <= nums2[j])
                 {
-                    result[index] = a[i];
+                    nums1[index] = tempA[i];
                     i++;
                 }
                 else
                 {
-                    result[index] = b[j];
+                    nums1[index] = nums2[j];
                     j++;
                 }
                 index++;
             }
 
-            while(i < a.Length)
+            while (i < m)
             {
-                result[index] = a[i];
+                nums1[index] = tempA[i];
                 i++;
                 index++;
             }
-
-            while(j < b.Length)
+            while (j < n)
             {
-                result[index] = b[j];
+                nums1[index] = nums2[j];
                 j++;
                 index++;
             }
-
-            return result;
-        }
-
-        static int[] CombineArrays(int[] a, int[] b, int numberOfNonEmptyElementsInA)
-        {
-            for(int i=0; i<b.Length; i++)
-            {
-                a[numberOfNonEmptyElementsInA + i] = b[i]; 
-            }
-            return a;
         }
     }
 }
