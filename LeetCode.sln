@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountAndSay", "Easy\CountAn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListCycle", "Easy\LinkedListCycle\LinkedListCycle.csproj", "{76A140D3-FA71-4771-BAE7-70F4EEFF93EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinStack", "Easy\MinStack\MinStack.csproj", "{A2BEF80A-E07C-4CDF-9D67-FC8654A60EB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -175,6 +177,10 @@ Global
 		{76A140D3-FA71-4771-BAE7-70F4EEFF93EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76A140D3-FA71-4771-BAE7-70F4EEFF93EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76A140D3-FA71-4771-BAE7-70F4EEFF93EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2BEF80A-E07C-4CDF-9D67-FC8654A60EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2BEF80A-E07C-4CDF-9D67-FC8654A60EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2BEF80A-E07C-4CDF-9D67-FC8654A60EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2BEF80A-E07C-4CDF-9D67-FC8654A60EB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -207,6 +213,7 @@ Global
 		{C1656723-DB10-4BCA-B6B0-88D1D5E42289} = {93818555-5534-4822-8DA5-99350D561D11}
 		{91B5FC76-5C02-49B2-A7BE-22978C236D5B} = {93818555-5534-4822-8DA5-99350D561D11}
 		{76A140D3-FA71-4771-BAE7-70F4EEFF93EB} = {93818555-5534-4822-8DA5-99350D561D11}
+		{A2BEF80A-E07C-4CDF-9D67-FC8654A60EB9} = {93818555-5534-4822-8DA5-99350D561D11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AFBD862-35E5-4C8E-AD66-EF2326406803}
