@@ -10,10 +10,10 @@ namespace StringToInteger
     {
         static void Main(string[] args)
         {
-            //int r = MyAtoi("trolo");
+            int r = MyAtoi("trolo");
             int r2 = MyAtoi("              -142");
-            //int r3 = MyAtoi("256");
-            //int r4 = MyAtoi("2");
+            int r3 = MyAtoi("256");
+            int r4 = MyAtoi("2");
             int r5 = MyAtoi("-91283472332");
             int r6 = MyAtoi("91283472332");
             int r7 = MyAtoi("words and 987");
@@ -22,11 +22,12 @@ namespace StringToInteger
             int r10 = MyAtoi("+1");
             int r11 = MyAtoi("  0000000000012345678");
             int r12 = MyAtoi("+-8");
+            int r13 = MyAtoi(" ");
         }
 
         static public int MyAtoi(string str)
         {
-            if(string.IsNullOrEmpty(str))
+            if(string.IsNullOrWhiteSpace(str))
             {
                 return 0;
             }
@@ -36,20 +37,18 @@ namespace StringToInteger
             int endOfNumberIndex = 0;
             str = str.Trim();
 
-            for (int i = 0; i < str.Length; i++)
+            if(str[0] == '-' || str[0] == '+')
             {
-                char currentChar = str[i];
-                if (currentChar == '-')
+                startOfNumberIndex = 1;
+                if(str[0] == '-')
                 {
                     negative = -1;
-                    startOfNumberIndex = 1;
-                    continue;
                 }
-                if(currentChar == '+')
-                {
-                    startOfNumberIndex = 1;
-                    continue;
-                }
+            }
+
+            for (int i = startOfNumberIndex; i < str.Length; i++)
+            {
+                char currentChar = str[i];
                 if (char.IsDigit(currentChar))
                 {
                     endOfNumberIndex++;
@@ -60,7 +59,7 @@ namespace StringToInteger
                 }
             }
 
-            if (endOfNumberIndex == 0)
+            if (endOfNumberIndex - startOfNumberIndex < 0)
             {
                 return 0;
             }
