@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AddTwoNumbers
+namespace CommonClasses
 {
     public class ListNode
     {
