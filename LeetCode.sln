@@ -107,6 +107,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplementStackUsingQueues",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvertBinaryTree", "Easy\InvertBinaryTree\InvertBinaryTree.csproj", "{F2162DC8-B06B-4B3B-958F-25F0396E2225}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerOfTwo", "Easy\PowerOfTwo\PowerOfTwo.csproj", "{2D48645E-EE83-49C6-9D91-C10240BE2E6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplementQueueUsingStacks", "Easy\ImplementQueueUsingStacks\ImplementQueueUsingStacks.csproj", "{8F94BEA0-4CDB-45F4-8950-7692D30AA789}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -313,6 +317,14 @@ Global
 		{F2162DC8-B06B-4B3B-958F-25F0396E2225}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2162DC8-B06B-4B3B-958F-25F0396E2225}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2162DC8-B06B-4B3B-958F-25F0396E2225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D48645E-EE83-49C6-9D91-C10240BE2E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D48645E-EE83-49C6-9D91-C10240BE2E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D48645E-EE83-49C6-9D91-C10240BE2E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D48645E-EE83-49C6-9D91-C10240BE2E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F94BEA0-4CDB-45F4-8950-7692D30AA789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F94BEA0-4CDB-45F4-8950-7692D30AA789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F94BEA0-4CDB-45F4-8950-7692D30AA789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F94BEA0-4CDB-45F4-8950-7692D30AA789}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -367,6 +379,8 @@ Global
 		{74B8CDFE-6541-4E47-9EC2-5D46C561AAB4} = {93818555-5534-4822-8DA5-99350D561D11}
 		{505A746B-2AF6-4756-8374-ECB08936EBFF} = {93818555-5534-4822-8DA5-99350D561D11}
 		{F2162DC8-B06B-4B3B-958F-25F0396E2225} = {93818555-5534-4822-8DA5-99350D561D11}
+		{2D48645E-EE83-49C6-9D91-C10240BE2E6A} = {93818555-5534-4822-8DA5-99350D561D11}
+		{8F94BEA0-4CDB-45F4-8950-7692D30AA789} = {93818555-5534-4822-8DA5-99350D561D11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AFBD862-35E5-4C8E-AD66-EF2326406803}
