@@ -131,6 +131,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordPattern", "Easy\WordPat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SameTree", "Easy\SameTree\SameTree.csproj", "{D7ADF583-D929-4F36-B746-C8B4C443E223}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RangeSumQuery", "Easy\RangeSumQuery\RangeSumQuery.csproj", "{335F0244-FB03-4107-BC68-4A6DAD81C357}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -385,6 +387,10 @@ Global
 		{D7ADF583-D929-4F36-B746-C8B4C443E223}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7ADF583-D929-4F36-B746-C8B4C443E223}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7ADF583-D929-4F36-B746-C8B4C443E223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{335F0244-FB03-4107-BC68-4A6DAD81C357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335F0244-FB03-4107-BC68-4A6DAD81C357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335F0244-FB03-4107-BC68-4A6DAD81C357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335F0244-FB03-4107-BC68-4A6DAD81C357}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -451,6 +457,7 @@ Global
 		{C2FAD9B5-DF38-4243-A68A-AA66BC1D0AF3} = {93818555-5534-4822-8DA5-99350D561D11}
 		{01B2E21E-6D54-4E08-89C9-C80A85CA3544} = {93818555-5534-4822-8DA5-99350D561D11}
 		{D7ADF583-D929-4F36-B746-C8B4C443E223} = {93818555-5534-4822-8DA5-99350D561D11}
+		{335F0244-FB03-4107-BC68-4A6DAD81C357} = {93818555-5534-4822-8DA5-99350D561D11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AFBD862-35E5-4C8E-AD66-EF2326406803}
